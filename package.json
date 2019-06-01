@@ -1,0 +1,33 @@
+{
+  "name": "tic-tac-toe",
+  "author": {
+    "name": "Brian Tam",
+    "email": "briantam23@gmail.com",
+    "url": "https://briantam23.github.io"
+  },
+  "contributors": [
+    {
+      "name": "Brian Tam",
+      "email": "briantam23@gmail.com",
+      "url": "https://briantam23.github.io"
+    }
+  ],
+  "homepage": "https://github.com/briantam23/tic-tac-toe",
+  "version": "1.0.0",
+  "description": "A tic-tac-toe NodeJS console game.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/briantam23/tic-tac-toe.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
+}
