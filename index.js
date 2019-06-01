@@ -65,3 +65,41 @@ const checkDraw = () => {
     }
     return true;
 }
+
+const playTurn = player => {
+
+    console.log('Your turn player: ' + player);
+    prompt.start();
+    prompt.get(['position'], (err, result) => {
+
+        if(validateMove(result.position) === true) {
+            markBoard(result.position, player);
+            printBoard();
+            if(checkWin(player) === true) {
+                console.log('Winner Winner!');
+                return;
+            }
+            if(checkDraw(player) === true) {
+                console.log('Draw!');
+                return;
+            }
+            player === 'X' ? playTurn('O') : playTurn('X');
+        } 
+        else {
+            console.log('incorrect input please try again...');
+            playTurn(player);
+        }
+    });
+}
+
+console.log(
+    'Game started: \n' +
+    ' 1 | 2 | 3 \n' +
+    ' --------- \n' +
+    ' 4 | 5 | 6 \n' +
+    ' --------- \n' +
+    ' 7 | 8 | 9 \n'
+);
+
+
+playTurn('X');
