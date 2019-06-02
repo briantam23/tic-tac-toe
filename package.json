@@ -24,7 +24,9 @@
     "start": "node ./index.js"
   },
   "keywords": [
-    "nodejs"
+    "nodejs",
+    "console-game",
+    "tic-tac-toe"
   ],
   "license": "ISC",
   "dependencies": {
